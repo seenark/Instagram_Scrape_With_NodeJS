@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  instagramscrapeexpress:
+    image: instagramscrapeexpress
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8088:8088

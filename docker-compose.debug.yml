@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  instagramscrapeexpress:
+    image: instagramscrapeexpress
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 8088:8088
+      - 9229:9229
+    command: ["node", "--inspect=0.0.0.0:9229", "src/index.ts"]
