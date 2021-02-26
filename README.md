@@ -1,4 +1,9 @@
 # Instagram_Scrape_With_NodeJS
 
-## This project using puppeteer nodejs dependency 
+## writing with typescript
+
+## This project using puppeteer nodejs dependency
+
 the example is src/app/instagram/instagram.service.ts
+
+## API build on expressjs
