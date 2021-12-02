@@ -8,5 +8,7 @@ services:
       dockerfile: ./Dockerfile
     environment:
       NODE_ENV: production
+      COIN_HOST: host.docker.internal
     ports:
       - 8088:8088
+    # network_mode: host
